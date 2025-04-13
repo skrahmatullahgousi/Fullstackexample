@@ -1,0 +1,17 @@
+<p>register works!</p>
+<div>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" required id="name" placeholder="name" [(ngModel)]="Register.registerName">
+    </div>
+    <div>
+        <label for="pass">password</label>
+        <input type="password" required id="pass" placeholder="password" [(ngModel)]="Register.registerpassword" size="8">
+    </div>
+    <div>
+        <label for="em">email</label>
+        <input type="email" required id="em" placeholder="email" [(ngModel)]="Register.email" size="8">
+    </div>
+    
+    <button (click)="Registerdetails()">login</button>
+    </div>

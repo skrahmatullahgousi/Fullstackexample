@@ -1,0 +1,24 @@
+<header class="navbar">
+  <div class="navbar-container">
+    <!-- Logo or Brand Name -->
+    <div class="brand-logo bounce-animation">
+      <a routerLink="/" class="logo-link">MyApp</a>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <ul>
+        <li><a routerLink="/dashboard" class="nav-link hover-underline-animation">Dashboard</a></li>
+        <li><a routerLink="/login" class="nav-link hover-underline-animation">Login</a></li>
+        <li><a routerLink="/registration" class="nav-link hover-underline-animation">Registration</a></li>
+      </ul>
+    </nav>
+
+    <!-- Logoff Button -->
+    <div class="nav-actions">
+      <button class="btn-logoff" [routerLink]="['dashboard']">Logoff</button>
+    </div>
+  </div>
+</header>
+<app-root></app-root>
+<router-outlet></router-outlet>
